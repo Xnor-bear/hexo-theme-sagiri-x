@@ -1,0 +1,684 @@
+# ---------------------------------------------------------------
+# Theme Core Configuration Settings
+# ---
+# 主题核心配置设置
+# ---------------------------------------------------------------
+
+# 如果要完全覆盖默认配置，请设置为 true。
+# 如果您不想继承主题_config.yml 配置，则很有用。
+override: false
+
+
+# ---------------------------------------------------------------
+# Site Information Settings
+# ---
+# 网站信息设置
+# ---------------------------------------------------------------
+
+# 网站 favicon 设置
+# 设置 'visibilitychange：ture' 将在用户不查看您的网站时更改页面的标题和图标。
+# （可能）参考自： https://github.com/Bahlaouane-Hamza/I-Miss-You
+favicon:
+  visibilitychange: true
+  narmal: /favicon.ico
+  hidden: /failure.ico
+  show_text: (*´∇｀*)被你发现啦~
+  hide_text: (つェ⊂)我藏好了哦~
+  apple_touch_icon: /apple-touch-icon.png
+  safari_pinned_tab: /safari-pinned-tab.svg
+  android_manifest: /site.webmanifest
+  ms_browserconfig: /browserconfig.xml
+
+# 主页顶部图片  
+header_bg: /images/header.jpg
+
+# 主页头像设置
+avatar: /images/Xnor.jpg
+
+# 头像下网站描述
+description: 为了你，我得站得更高才行！
+
+# 设置默认关键字（使用逗号分隔）
+keywords: "Xnor,blog"
+
+# 将 rss 设置为 false 以禁用 Feed 订阅链接。
+# 将 rss 保留为空以使用站点的 Feed 订阅链接。
+# 如果已经配置了你自己的 Feed，请将 rss 设置为特定值。
+rss:
+# 邮箱 Feed 订阅地址
+emailfeed:
+
+# 网站底部信息
+footer:
+  # 指定网站设立的日期
+  # 如果未定义，将使用当前年份
+  since: 8/15/2019 11:30:00
+
+  # 如果未定义，将在 Hexo 主配置中使用 'Author'
+  copyright:
+
+  # 可以在此处定义任何自定义文本
+  custom_text: 托管于<a href="https://aliyun.com" target="_blank" rel="nofollow"> 阿里云 </a>.<a href="https://www.qiniu.com/" target="_blank" rel="nofollow"> 七牛云 </a>提供 CDN 服务. 
+  
+  # 站点地图
+  sitemap: /baidusitemap.xml
+  
+  # 备案号
+  beian: 宇宙ICP备1234567号
+
+
+# ---------------------------------------------------------------
+# SEO Settings
+# ---
+# SEO 设置
+# ---------------------------------------------------------------
+
+# 规范化，在 hexo 中设置一个规范化链接标记，您可以将其用于博客的 SEO。
+# 参考: https://support.google.com/webmasters/answer/139066
+# 提示：打开此标记之前，请记住在 hexo（非主题下） 下的 _config.yml 中设置 URL ( ex. url: https://yourdomain.com )
+canonical: true
+
+# 更改站点副标题（将成为主要的站点描述）和所有帖子/页面标题上的标题层次结构，以实现更好的 SEO 优化。
+seo: true
+
+# 如果为 true，则将站点副标题添加到主页，并在 _config.yml 中添加 'subtitle：yoursubtitle'。
+index_with_subtitle: false
+
+
+# ---------------------------------------------------------------
+# Menu Settings
+# ---
+# 菜单设置
+# ---------------------------------------------------------------
+
+# 在子目录（例如 yourdomain.com/blog）中运行站点时，请从链接值（/archives-> archives）中删除斜杠。
+# 用法: `Key: /link/ || icon`
+# Key 是菜单项的名称。如果此菜单的翻译可以在 languages 中找到，将加载此翻译；如果没有，将使用 Key 名称。Key 区分大小写。
+# /link/ 的值是链接。
+# icon 的值是 FontAwesome 图标的名称。
+menu:
+  首页: / || fas fa-meteor
+  分类: /categories/ || fas fa-archive
+  捕捉: javascript:; || fas fa-broom
+  实验: javascript:; || fas fa-magic
+  后宫: /friends/ || fas fa-cat
+  关于: /about/ || fas fa-rocket
+
+# 副菜单
+submenu:
+  捕捉:
+     GitHub: https://github.com/Xnor-bear
+     Twitter: https://twitter.com/XiangNor
+     Weibo: https://weibo.com/whysohandsome
+     Zhihu: https://www.zhihu.com/people/nextworld
+     Bilibili: https://space.bilibili.com/12080275
+     Netease Music: https://music.163.com/#/user/home?id=36888137
+     Steam: https://steamcommunity.com/id/xiangnor
+     Coolapk: https://www.coolapk.com/u/1008025
+  实验:
+     APlayer: https://aplayer.js.org/
+     Oneindex: https://pan.prprpr.me/
+
+# 启用/停用菜单图标
+menu_icons:
+   enable: true
+
+
+# ---------------------------------------------------------------
+# Sidebar Settings
+# ---
+# 侧边栏设置
+# ---------------------------------------------------------------
+
+# 侧边栏主体设置
+sidebar:
+  # 侧边栏位置，可用值： left | right .
+  position: right
+
+  # 侧边栏目录显示设置，可用值：
+  #  - post    只在文章页面显示
+  #  - always  在任何页面显示
+  #  - hide    只在你点击切换选项后显示
+  #  - remove  完全删除侧边栏，包括切换选项
+  display: always
+
+  # 侧边栏与顶部菜单栏的距离（以像素为单位）
+  offset: 52
+
+# 社交平台链接
+# 用法：'Key: "permalink || <i icon>id</i>"'（注意""）（具体用法请参考实例）
+# Key 的值是社交平台的名称
+# permalink 的值是目标链接
+# <i icon>id</i> 的值为图标名称（id 的值为您想显示的名称）
+# 若您使用 svg 图标请去掉""
+social:
+  GitHub: "https://github.com/Xnor-bear || <i class=\"fab fa-github\" style=\"color: #191717\"><span>Xnor-Bear</span></i>"
+  Twitter: "https://twitter.com/XiangNor || <i class=\"fab fa-twitter\" style=\"color: #2FB0EC\"><span>XiangNor</span></i>"
+  QQ: tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1548731567 || <i><svg t="1581181882582" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="13328"><path d="M616.086443 921.281964c-40.013106 0-75.217656 1.034243-104.163021 3.734019-28.918502-2.686345-64.069324-3.734019-103.961546-3.734019-115.015854 0-217.325298 43.572513-217.325297 75.754924 0 30.839239 84.995951 27.400717 199.729739 26.232158a615.052083 615.052083 0 0 0 123.168911-12.840729 623.890158 623.890158 0 0 0 120.119909 12.115415c114.653198 1.155128 199.595422 4.580218 199.595422-26.044113 0-31.954072-102.242285-75.217656-217.177549-75.217655z" fill="#F9AE07" p-id="13329"></path><path d="M902.11501 604.803678q-32.343592-87.051005-70.476257-171.791753 1.786419-20.738582 1.786419-41.59805C833.425172 175.243706 722.78806 0 512.500986 0S191.549936 175.243706 191.549936 391.413875c0 13.16309 0.564132 26.17843 1.611807 39.005727A2781.978719 2781.978719 0 0 0 121.718402 605.233493C77.474302 725.245949 75.51327 833.760849 90.906026 841.819883c10.946855 5.735346 50.94653-36.22536 89.052332-104.136158 25.184483 160.025562 131.563739 279.715657 332.55606 279.715657 200.428189 0 306.780581-119.045372 332.32772-278.439643 37.904326 66.60792 77.3533 107.614974 88.232996 101.946787 15.446483-8.059035 13.472019-116.345595-30.946692-236.102848z" fill="#2c2c2c" p-id="13330"></path><path d="M426.578246 128.178944c-31.201895 0.604428-55.795382 37.380488-54.935752 82.148425s26.87688 80.55005 58.078776 79.932191 55.808814-37.380488 54.935752-82.134993c-0.85963-44.754505-26.863448-80.55005-58.078776-79.945623z m172.476771 0.832767c-31.564552-0.604428-57.850436 35.016505-58.723499 79.542671s23.989059 81.114183 55.553612 81.71861c31.564552 0.604428 57.863868-35.016505 58.73693-79.542671s-24.002491-81.127614-55.567043-81.71861z m118.588693 358.976261a1226.638782 1226.638782 0 0 1-207.170914 16.66877 1231.742837 1231.742837 0 0 1-203.624939-16.077774c-41.665209 51.604684-44.942549 127.507358-44.94255 212.167516 0 155.445344 87.924067 281.475213 250.595679 281.475212 162.65818 0 250.595679-126.016437 250.595679-281.475212 0-84.982519-3.331068-161.153827-45.452955-212.758512z" fill="#FFFFFF" p-id="13331"></path><path d="M512.500986 316.652898c-109.267076 0-197.849298 21.987733-197.849298 39.583292s115.781463 65.963198 197.849298 65.963197 197.835866-49.549631 197.835866-65.963197-88.582221-39.583291-197.849298-39.583292z" fill="#F9AE07" p-id="13332"></path><path d="M831.638753 433.011925c0.040295-0.402952 0.040295-0.792472 0.080591-1.181992-80.335143 26.594814-193.6586 43.15613-319.23179 43.15613-125.908983 0-239.487643-16.655338-319.86308-43.384469Q166.983312 488.807307 143.961337 547.087559a1025.512144 1025.512144 0 0 0 164.83412 38.750524v147.157971a675.535137 675.535137 0 0 0 82.309605 9.536524 336.088603 336.088603 0 0 0 58.374274-3.680293V599.592169c20.72515 0.940221 41.718935 1.464058 63.02165 1.464058a1197.062125 1197.062125 0 0 0 367.559133-53.646307q-22.927953-57.729551-48.421366-114.397995z" fill="#E91F1F" p-id="13333"></path><path d="M445.060299 184.753367a29.281159 29.281159 0 0 0-24.902417 32.236138 29.281159 29.281159 0 0 0 24.902417 32.222706 29.281159 29.281159 0 0 0 24.888985-32.236138 29.281159 29.281159 0 0 0-24.888985-32.222706z m183.208718 20.483379a38.965432 38.965432 0 0 0-35.164254-8.797779 53.914941 53.914941 0 0 0-36.346246 19.046185s-5.950254 8.193352-1.759556 13.203384 11.712464-2.928116 11.712464-2.928115a41.315984 41.315984 0 0 1 26.379906-14.654012 39.354952 39.354952 0 0 1 23.451791 5.856232s7.32029 5.37269 11.725895 0a10.20811 10.20811 0 0 0 0-11.725895z" fill="" p-id="13334"></path></svg><span>QQ</span></i>
+  微博: "https://weibo.com/whysohandsome || <i class=\"fab fa-weibo\" style=\"color: #FF0000\"><span>立入懵比</span></i>"
+  知乎: "https://zhihu.com/nextworld || <i class=\"fab fa-zhihu\" style=\"color: #0000FF\"><span>向南陌</span></i>"
+  哔哩哔哩: https://space.bilibili.com/12080275 || <i style="fill:#20b0e3"><svg t="1581180571735" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1122"><path d="M813.2864 234.5216h-53.0176l46.3872-46.3872c19.8912-19.8912 19.8912-59.648 0-79.5136s-59.648-19.8912-79.5136 0l-132.5312 125.9008h-159.0272l-132.5312-125.9008c-19.8912-19.8912-59.648-19.8912-79.5136 0s-19.8912 59.648 0 79.5136l46.3872 46.3872H216.9088c-92.7744 0-165.6576 72.8832-165.6576 165.6576v357.8112c0 99.4048 72.8832 172.288 165.6576 172.288h589.7216c92.7744 0 165.6576-72.8832 165.6576-165.6576V400.1792c6.6304-92.7744-66.2528-165.6576-159.0272-165.6576z m46.3872 523.4688a59.392 59.392 0 0 1-59.648 59.648H223.5392a59.392 59.392 0 0 1-59.648-59.648V406.8096a59.392 59.392 0 0 1 59.648-59.648h576.4864a59.392 59.392 0 0 1 59.648 59.648v351.1808z m-516.864-291.5328a59.392 59.392 0 0 0-59.648 59.648v59.648c0 33.1264 26.496 59.648 59.648 59.648s59.648-26.496 59.648-59.648v-59.648a59.392 59.392 0 0 0-59.648-59.648z m344.576 0a59.392 59.392 0 0 0-59.648 59.648v59.648c0 33.1264 26.496 59.648 59.648 59.648s59.648-26.496 59.648-59.648v-59.648a59.392 59.392 0 0 0-59.648-59.648z" p-id="1123"></path></svg><span>柳泉鸶</span></i>
+  网易云音乐: https://music.163.com/#/user/home?id=36888137 || <i><svg t="1581780961114" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="544" width="200" height="200"><path d="M444.629333 485.333333c-12.544 43.861333 0.512 88.064 33.450667 113.194667 45.269333 34.56 109.44 12.8 122.624-42.453333 3.413333-14.378667 4.394667-30.805333 1.152-45.056-9.813333-42.709333-22.186667-84.821333-33.792-127.829334-56.746667 6.570667-108.501333 50.005333-123.434667 102.144z m236.714667-12.245333c11.648 43.178667 12.16 86.058667-5.418667 128-48.128 114.773333-201.429333 133.973333-280.448 35.242667-55.552-69.418667-54.613333-169.002667 2.56-244.650667 33.28-44.032 76.970667-72.832 130.048-87.637333l16.170667-4.437334c-3.584-17.706667-8.021333-34.816-10.368-52.224-7.509333-56.192 21.845333-106.794667 74.410667-129.706666 52.309333-22.826667 115.541333-9.216 150.613333 32.426666 17.322667 20.437333 16.853333 46.08-1.066667 62.464-17.578667 16.085333-42.496 14.762667-61.226666-3.84-10.538667-10.496-21.76-18.773333-37.418667-18.602666-22.4 0.256-42.112 17.834667-40.32 39.978666 1.578667 19.968 7.381333 39.68 12.8 59.136 0.938667 3.328 9.216 5.76 14.421333 6.528 56.917333 8.405333 106.837333 31.189333 148.138667 71.509334 109.141333 106.368 122.069333 278.656 28.672 402.773333-65.237333 86.698667-154.026667 135.168-261.418667 145.450667-197.162667 18.773333-369.664-107.946667-413.866666-301.141334-40.32-176.810667 58.88-365.568 227.626666-433.024 25.002667-9.984 48.768-1.322667 58.496 21.248 9.898667 22.912-0.810667 46.336-26.026666 57.6-101.034667 45.226667-162.858667 121.813333-179.84 231.424-22.741333 146.474667 70.656 289.109333 213.333333 329.386667 116.181333 32.853333 241.408-7.082667 311.808-99.413333 67.669333-88.746667 59.733333-217.557333-18.218667-293.248a169.770667 169.770667 0 0 0-77.781333-43.221334c8.448 30.549333 16.597333 59.221333 24.32 87.978667z" p-id="545" fill="#d81e06"></path></svg><span>楚霜降</span></i>
+  Steam: "https://steamcommunity.com/id/xiangnor || <i class=\"fab fa-steam\" style=\"coloer: #FFFFFF\"><span>MutekiGamer.M</span></i>"
+  酷安: https://www.coolapk.com/u/1008025 || <i><svg t="1581785662171" viewBox="0 0 1724 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1255" width="200" height="200"><path d="M1486.056396954258 489.33566137552265c-95.37153580784799-170.97976831197738-176.23789428770544-315.30627407133574-180.0455033272505-321.2896588772536l-0.725258830189705-0.725258830189705C1295.313326062758 152.09030823409557 1277.725799249609 142.1179995000362 1258.6877547760803 142.1179995000362c-2.3570913791656496 0-3.8076090395450595 0-6.164699694514274 0.725258830189705-16.862267982959747 1.45051766037941-31.367443862557412 9.247049903869627-41.15843843221664 21.39513512849808-13.779917773604392 17.587526813149452-32.09270269274711 48.04839695692063-64.18540610969066 102.98675316274168C1005.2097954352699 510.73079722821717 939.5738723893962 601.5694651663304 853.9933311512076 672.4635149121284c-86.30580006837846 71.80062346458435-183.12785353660584 97.0033676326275-277.77413051426413 72.52588229477405-21.39513512849808-5.2581266999244685-38.982661941647535-12.148085224628447-55.66361431181429-21.39513512849808-40.43317960202695-21.39513512849808-73.97639995515347-53.48783854544161-97.00336835682393-92.28918559849261-11.422826394438744-17.587526813149452-19.038044473528863-35.175052902102465-23.570911619067193-57.295446860790264-5.2581266999244685-19.038044473528863-7.615217354893684-39.70792077183723-7.615217354893684-61.1030559003353 0-43.515529811382294 11.422826394438744-84.67396751940251 32.09270269274711-119.8490211457014v-0.725258830189705c1.45051766037941-2.3570913791656496 2.3570913791656496-4.532867869734764 3.8076090395450595-6.164699694514274 20.669876298308374-33.54322035312652 49.68022950589656-60.37779707014561 83.9487086892128-80.14110037386416 1.45051766037941-0.725258830189705 3.8076090395450595-2.3570913791656496 5.2581266999244685-3.0823502093553543 1.45051766037941-0.725258830189705 3.0823502093553543-1.45051766037941 4.532867869734764-2.357090654969215 3.0823502093553543-1.45051766037941 6.164699694514274-3.0823502093553543 8.340476185083391-4.532867869734764 0.725258830189705-0.725258830189705 1.45051766037941-0.725258830189705 2.3570913791656496-0.725258830189705 3.8076090395450595-1.45051766037941 7.615217354893684-3.0823502093553543 10.69756756424904-4.532867869734764 0.725258830189705 0 0.725258830189705-0.725258830189705 1.45051766037941-0.725258830189705 3.0823502093553543-1.45051766037941 6.164699694514274-2.3570913791656496 9.247049903869627-3.0823494851589204 37.35082939267158-12.148085224628447 78.69058271348476-16.862267982959747 123.65662946105003-11.422827118635176 88.48157655894755 9.247049903869627 155.7493328779936 44.9660474717617 267.07656222581863 138.88706489503383 13.779917773604392 11.422826394438744 26.653261828422544 21.39513512849808 28.285094377398483 21.395135852694512 5.2581266999244685 0 101.53623550236223-69.44353280961515 102.98675316274168-73.97639995515347 2.3570913791656496-6.164699694514274-97.7286264628172-87.75631772875786-152.6669826686382-126.01372084021565-45.872620466351506-31.367443862557412-112.95906189680099-64.91066493988038-152.6669826686382-76.3334913343191-29.0103532075882-8.340476185083391-61.828314730525015-13.779917773604392-93.92101742327213-15.955694264173506-14.5051766037941-1.45051766037941-28.285094377398483-2.3570913791656496-43.515529811382294-2.3570913791656496C428.0850858380397 141.21142578125 262.54475911458337 307.65832622349257 262.54475911458337 512.1813148885965v0.725258830189705c0 4.532867869734764 0 8.340476185083391 0.725258830189705 12.148085224628447 4.532867869734764 138.16180606484411 85.39922634959221 257.2855683803558 200.71537962555882 316.75679173171517 1.45051766037941 0.725258830189705 2.3570913791656496 1.45051766037941 3.8076090395450595 1.45051766037941 2.3570913791656496 0.725258830189705 4.532867869734764 2.3570913791656496 6.164699694514274 3.0823502093553543 25.928002998232838 13.054658943414687 54.21309737563133 22.12039395868778 83.94870941340923 28.285093653202054 2.3570913791656496 0.725258830189705 4.532867869734764 0.725258830189705 6.164699694514274 1.45051766037941 2.3570913791656496 0.725258830189705 5.2581266999244685 0.725258830189705 7.615218079090119 1.45051766037941 19.763303303718562 3.8076090395450595 40.43317960202695 5.2581266999244685 61.1030559003353 5.2581266999244685h4.714182034134865c51.13074716627598 0 104.61858571171761-9.247049903869627 148.13411479890345-25.928002998232838 95.37153580784799-35.175052902102465 203.79772983491418-128.1894973307848 287.0211804181338-245.86274198591707 26.653261828422544-37.35082939267158 83.22344985902309-126.7389796704054 152.6669826686382-241.1485592275858 12.148085224628447-21.39513512849808 24.47748533785343-38.076088222861294 25.928002998232838-36.62557056248188 4.532867869734764 4.532867869734764 138.16180606484411 248.0385177522898 136.71128840446474 249.67035102546217-0.725258830189705 0.725258830189705-32.09270269274711-21.39513512849808-70.89405046999454-50.40548833608627-43.515529811382294-31.367443862557412-71.80062346458435-50.40548833608627-74.88297367393972-48.04839768111706-16.862267982959747 9.247049903869627-99.90440295338631 70.16879163980484-99.90440295338631 73.25114184916018 0 1.45051766037941 53.48783854544161 42.79027098119259 119.12376231551171 90.83866721391678 64.91066493988038 48.04839695692063 163.36455023288727 120.57427997589112 216.8523880541324 161.00745957791804 90.8386679381132 67.08644143044948 99.90440295338631 73.25114112496377 116.04141210615634 73.25114112496377 35.175052902102465 0 61.828314730525015-27.559835547208785 61.828314730525015-64.18540610969066 1.6318325489759447-16.318323317170144-12.148085224628447-42.24632631540298-170.07319386899474-329.2675067335368z" p-id="1256" fill="#d8cd44"></path></svg><span>寶生永夢</span></i>
+
+# 社交平台图标
+social_icons:
+   enable: true
+   icons_only: true
+   transition: false
+
+# 侧边栏卡片信息
+card:
+  avatar: /images/card.jpg
+  name: <span style="opacity:.2;">网红</span>Xnor
+  description: 捕捉 Xnor Project~
+  items:
+    最喜欢的作品: 四月是你的谎言<br>DARLING in the FRANXX<br>Re：从零开始的异世界生活
+    最喜欢的女孩子: 宫园薰、和泉纱雾、灶门祢豆子、土间埋
+    最喜欢的游戏: 守望先锋、人类一败涂地、弹丸论破、逆转裁判
+    装备: 魅族 16S、iPhone 8、Kindle paperwhite 4、Matebook 14(2019 Windows 10 Edition)、Beats Solo 3(Satin Gold)
+
+# 侧边栏显示目录
+toc:
+  enable: true
+
+  # 自动添加编号到目录。
+  number: true
+
+  # 设置为 true 的话，如果文章标题比侧边栏宽度长，则将完整英文单词放在下一行。（即不拆分单词，中文无效）
+  wrap: true
+
+# 侧边栏版权声明
+# 详情参考： https://creativecommons.org/
+# 可选值: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+creative_commons: by-nc-sa
+
+
+# ---------------------------------------------------------------
+# Post Settings
+# ---
+# 文章设置
+# ---------------------------------------------------------------
+
+# 自动将页面滚动到 <!-- more --> （查看更多）标记下的部分。
+scroll_to_more: true
+
+# 自动保存每个帖子/页面上的浏览位置到 cookies
+save_scroll: false
+
+# 自动摘录首页中的描述作为前导文字。
+excerpt_description: true
+
+# 自动形成摘要（不建议）
+# 请用在文章中使用 <!-- more --> 标记来准确地截断
+auto_excerpt:
+  enable: false
+  length: 150
+
+# 文件头（Post meta） 显示设置
+post_meta:
+  item_text: true
+  created_at: true
+  updated_at: false
+  categories: true
+
+# 文章字数统计显示设置
+# Dependencies: https://github.com/willin/hexo-wordcount
+post_wordcount:
+  item_text: true
+  wordcount: true
+  min2read: false
+  totalcount: false
+  separated_meta: false
+
+# 文章末尾添加“本文结束”标记
+passage_end_tag:
+  enabled: true
+
+# 微信公众号订阅
+wechat_subscriber:
+  enabled: false
+  qcode: # 您放微信公众号二维码的目录 例如： /images/wechat-qcode.jpg
+  description: # 公众号介绍语 例如： 扫描二维码关注我吧！
+
+# 赞赏
+reward_comment:
+wechatpay: /images/wechatpay.gif
+alipay: /images/alipay.gif
+bitcoin:
+
+# 文章底部版权声明
+post_copyright:
+  enable: true
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+
+# ---------------------------------------------------------------
+# Misc Theme Settings
+# ---
+#　主题杂项设置
+# ---------------------------------------------------------------
+
+# 友链样式设置
+links_icon: link
+links_title: Links
+links_layout: block
+
+# 友链（具体用法请参考实例）
+links:
+  Xnor: https://xnor.online/ || https://xnor.online/images/Xnor.jpg || 前端小透明
+  Diygod: https://diygod.me/ || http://pic.xnor.online/2019/08/29/573cf18cafb9786d491565206285d453.jpg || 有猫的大佬
+
+# 回到顶部是否开启
+b2t: true
+
+# 减少宽度较窄的设备上的填充/边距缩进。
+mobile_layout_economy: false
+
+# Android Chrome 标题面板颜色
+android_chrome_color: "#fff"
+
+
+# 代码高亮主题
+# 可用值:
+#    normal | night | night eighties | night blue | night bright
+# https://github.com/chriskempson/tomorrow-theme
+highlight_theme: night
+
+
+# ---------------------------------------------------------------
+# Font Settings
+# - Find fonts on Google Fonts (https://www.google.com/fonts)
+# - Be aware that setting too much fonts will cause site running slowly
+# ---
+# 字体设置
+# - 在 Google Fonts(https://www.google.com/fonts) 上寻找
+# - 请注意设置太多字体会导致网站加载缓慢
+# ---------------------------------------------------------------
+# To avoid space between header and sidebar in Pisces / Gemini themes recommended to use Web Safe fonts for `global` (and `logo`):
+# Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS
+# ---------------------------------------------------------------
+font:
+  enable: true
+
+  # 外链字体库地址，例如 //fonts.googleapis.com（默认值）。
+  host:
+
+  # 字体选项:
+  # 'external: true' 将从上面的 'host' 加载字体 
+  # 'family: Times New Roman' 不用加引号
+  # 'size: xx' 使用'px'作为单位
+
+  # 全局字体，应用在 body 元素上。
+  global:
+    external: true
+    family: Josefin Sans
+    size:
+
+  # 标题字体 (h1, h2, h3, h4, h5, h6).
+  # 与 'global' 设置冲突
+  headings:
+    external: false
+    family:
+    size:
+
+  # 文章字体
+  # 与 'global' 设置冲突
+  posts:
+    external: false
+    family:
+
+  # 代码与代码块字体
+  codes:
+    external: true
+    family: Fira Code
+    size:
+
+  # 主页大标题字体
+  title:
+    external: true
+    family: Luckiest Guy
+
+
+# ---------------------------------------------------------------
+# Third Party Services Settings
+# ---
+# 第三方服务设置
+# ---------------------------------------------------------------
+
+# MathJax 支持
+mathjax:
+  enable: false
+  per_page: false
+  cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
+
+# Han Support docs: https://hanzi.pro/
+han: false
+
+# 百度分析 ID
+baidu_analytics:
+
+# Disqus
+disqus:
+  enable: true
+  shortname:
+  count: false
+  api:
+  apikey:
+  admin: xiangnorth
+  adminLabel: 带帅比
+
+# Gitment
+# 介绍: https://imsun.net/posts/gitment-introduction/
+gitment:
+  enable: false
+  mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
+  count: true # Show comments count in post meta area
+  lazy: false # Comments lazy loading with a button
+  cleanly: false # Hide 'Powered by ...' on footer, and more
+  language: # Force language, or auto switch by theme
+  github_user: # MUST HAVE, Your Github ID
+  github_repo: # MUST HAVE, The repo you use to store Gitment comments
+  client_id:   # MUST HAVE, Github client id for the Gitment
+  client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
+  proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
+  redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
+
+# 畅言
+changyan:
+  enable: false
+  appid:
+  appkey:
+
+# Valine
+# 您可以从 https://leancloud.cn 获取您的 appid 和 appkey
+# 更多信息请查看： https://github.com/xCss/Valine
+valine:
+  enable: false
+  appid:  # your leancloud application appid
+  appkey:  # your leancloud application appkey
+  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
+  verify: false # Verification code
+  placeholder: Comment input placeholder
+
+# 来必力 LiveRe
+# 你可以从 https://livere.com/insight/myCode 获取 uid
+livere_uid:
+
+# 为每篇文章提供评分
+# 在 https://widgetpack.com 上获取 id
+rating:
+  enable: false
+  id:     #<app_id>
+  color:  fc6423
+
+# CNZZ 站点计数
+#cnzz_siteid:
+
+# Google Webmaster tools 确认设置
+# 参考: https://www.google.com/webmasters/
+google_site_verification:
+
+# Google Analytics
+google_analytics:
+
+# Bing Webmaster tools 确认设置
+# 参考: https://www.bing.com/webmaster/
+bing_site_verification:
+
+# Application Insights
+# 参考： https://azure.microsoft.com/en-us/services/application-insights/
+application_insights:
+# ---------------------------------------------------------------
+
+# Show number of visitors to each article.
+# You can visit https://leancloud.cn get AppID and AppKey.
+leancloud_visitors:
+  enable: false
+  app_id: #yours
+  app_key: #yours
+
+# 用不蒜子显示网站/页面的 PV/UV。
+# 在 http://ibruce.info/2015/04/04/busuanzi/ 上获取更多信息
+busuanzi_count:
+  # 仅在其他配置为false时计算值
+  enable: false
+  # 自定义整个网站的 uv 样式
+  site_uv: true
+  site_uv_header: <i class="fa fa-user"></i>
+  site_uv_footer:
+  # 自定义整个网站的 pv 样式
+  site_pv: true
+  site_pv_header: <i class="fa fa-eye"></i>
+  site_pv_footer:
+  # 自定义单个页面的 pv 样式
+  page_pv: true
+  page_pv_header: <i class="fa fa-file-o"></i>
+  page_pv_footer:
+
+# 启用百度推送，以便博客将网址自动推送到百度，这对 SEO 很有帮助
+baidu_push: true
+
+# Google 日历
+# 通过日历页面与他人共享您最近的日程安排
+# API 资料:
+# https://developers.google.com/google-apps/calendar/v3/reference/events/list
+calendar:
+  enable: false
+  calendar_id: <required>
+  api_key: <required>
+  orderBy: startTime
+  offsetMax: 24
+  offsetMin: 4
+  timeZone:
+  showDeleted: false
+  singleEvents: true
+  maxResults: 250
+
+# 本地搜索
+# 依赖库: https://github.com/flashlab/hexo-generator-search
+local_search:
+  enable: true
+  # 如果为 auto，则为即时显示搜索结果
+  # 如果为 manual, 则需按下搜索键显示结果
+  trigger: auto
+  # 显示的前 n 个结果，设置为-1显示所有结果
+  top_n_per_article: 3
+
+# Algolia 搜索
+algolia_search:
+  enable: false
+  hits:
+    per_page: 10
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "We didn't find any results for the search: ${query}"
+    hits_stats: "${hits} results found in ${time} ms"
+
+# ---------------------------------------------------------------
+# Tags Settings
+# ---
+# 标签设置
+# ---------------------------------------------------------------
+
+# 使用BASE64加密和解密的外部URL
+# 用法: {% exturl text url "title" %}
+# 或者: {% extlink text url "title" %}
+exturl: false
+
+# Note 标签(提示框).
+note:
+  # Note 标签样式值:
+  #  - simple    提示框旧警报样式
+  #  - modern    提示框新(v2-v3)警报样式
+  #  - flat      平滑标注样式与背景，像 Mozilla 或 StackOverflow 一样
+  #  - disabled  禁用所有CSS样式的note标记
+  style: simple
+  icons: false
+  border_radius: 3
+  # 对于现代和平面样式，背景偏移量为％ (modern: -12 | 12; flat: -18 | 6).
+  # 此选项可以与 disabled 的 Note 标签一起使用.
+  light_bg_offset: 0
+
+# Label 标签
+label: true
+
+# Tabs 标签
+tabs:
+  enable: true
+  transition:
+    tabs: false
+    labels: true
+  border_radius: 0
+
+
+#! ---------------------------------------------------------------
+#! DO NOT EDIT THE FOLLOWING SETTINGS
+#! UNLESS YOU KNOW WHAT YOU ARE DOING
+#! ---
+#! 请勿编辑以下设置
+#! 除非您知道自己在做什么
+#! ---------------------------------------------------------------
+
+# Use velocity to animate everything.
+motion:
+  enable: false
+  async: false
+  transition:
+    # Transition variants:
+    # fadeIn | fadeOut | flipXIn | flipXOut | flipYIn | flipYOut | flipBounceXIn | flipBounceXOut | flipBounceYIn | flipBounceYOut
+    # swoopIn | swoopOut | whirlIn | whirlOut | shrinkIn | shrinkOut | expandIn | expandOut
+    # bounceIn | bounceOut | bounceUpIn | bounceUpOut | bounceDownIn | bounceDownOut | bounceLeftIn | bounceLeftOut | bounceRightIn | bounceRightOut
+    # slideUpIn | slideUpOut | slideDownIn | slideDownOut | slideLeftIn | slideLeftOut | slideRightIn | slideRightOut
+    # slideUpBigIn | slideUpBigOut | slideDownBigIn | slideDownBigOut | slideLeftBigIn | slideLeftBigOut | slideRightBigIn | slideRightBigOut
+    # perspectiveUpIn | perspectiveUpOut | perspectiveDownIn | perspectiveDownOut | perspectiveLeftIn | perspectiveLeftOut | perspectiveRightIn | perspectiveRightOut
+    post_block: fadeIn
+    post_header: slideDownIn
+    post_body: slideDownIn
+    coll_header: slideLeftIn
+    sidebar: slideUpIn
+
+# Fancybox
+fancybox: true
+
+# Progress bar in the top during page loading.
+# Themes list:
+#pace-theme-big-counter
+#pace-theme-bounce
+#pace-theme-barber-shop
+#pace-theme-center-atom
+#pace-theme-center-circle
+#pace-theme-center-radar
+#pace-theme-center-simple
+#pace-theme-corner-indicator
+#pace-theme-fill-left
+#pace-theme-flash
+#pace-theme-loading-bar
+#pace-theme-mac-osx
+#pace-theme-minimal
+pace_theme: pace-theme-minimal
+
+# Canvas-nest
+canvas_nest: false
+
+# three_waves
+three_waves: false
+
+# canvas_lines
+canvas_lines: false
+
+# canvas_sphere
+canvas_sphere: false
+
+# Only fit scheme Pisces
+# Canvas-ribbon
+# size: The width of the ribbon.
+# alpha: The transparency of the ribbon.
+# zIndex: The display level of the ribbon.
+canvas_ribbon:
+  enable: true
+  size: 100
+  alpha: 0.6
+  zIndex: -1
+
+# Script Vendors.
+# Set a CDN address for the vendor you want to customize.
+# For example
+#    jquery: https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js
+# Be aware that you should use the same version as internal ones to avoid potential problems.
+# Please use the https protocol of CDN files when you enable https on your site.
+vendors:
+  # Internal path prefix. Please do not edit it.
+  _internal: lib
+
+  # Internal version: 1.2.6
+  disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1.2/dist/disqus.js
+
+  # Internal version: 3.4.1
+  jquery: https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js
+
+  # Internal version: 3.5.7
+  # 参考: https://fancyapps.com/fancybox/
+  fancybox: https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.js
+  fancybox_css: https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.css
+
+  # Internal version: 1.0.6
+  # 参考: https://github.com/ftlabs/fastclick
+  fastclick: https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js
+
+  # Internal version: 1.9.7
+  # 参考: https://github.com/tuupola/jquery_lazyload
+  lazyload: https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js
+
+  # Internal version: 0.7.20
+  # 参考: https://faisalman.github.io/ua-parser-js/
+  ua_parser: https://cdn.bootcss.com/UAParser.js/0.7.20/ua-parser.min.js
+
+  # Internal version: 4.7.0
+  # 参考: https://fontawesome.io/
+  fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
+
+  social_share_css: https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css
+
+  # Internal version: 1.0.2
+  # 参考: https://github.com/HubSpot/pace
+  pace: https://cdn.bootcss.com/pace/1.0.2/pace.min.js
+
+  # Internal version: 1.5.0
+  # https://www.algolia.com
+  algolia_instant_js:
+  algolia_instant_css:
+
+  # Internal version: 1.0.0
+  # https://github.com/hustcc/canvas-nest.js
+  canvas_nest:
+
+  # three_waves
+  # https://github.com/jjandxa/three_waves
+  three_waves:
+
+  # three_waves
+  # https://github.com/jjandxa/canvas_lines
+  canvas_lines:
+
+  # three_waves
+  # https://github.com/jjandxa/canvas_sphere
+  canvas_sphere:
+
+  # Internal version: 1.0.0
+  # https://github.com/zproo/canvas-ribbon
+  canvas_ribbon:
+
+  # Internal version: 3.3.0
+  # https://github.com/ethantw/Han
+  han: https://cdn.bootcss.com/Han/3.3.0/han.min.js
+
+# Assets
+css: css
+js: js
+images: images
+
+# theme version
+version: 0.0.59
