@@ -2,6 +2,9 @@
 
 > Another 『ka wa ii』 sagiri theme  
 
+![npm](https://img.shields.io/npm/v/hexo-theme-sagiri-x?style=flat-square)
+![David](https://img.shields.io/david/xnor-bear/hexo-theme-sagiri-x?style=flat-square)
+![David (path)](https://img.shields.io/david/dev/xnor-bear/hexo-theme-sagiri-x?style=flat-square)
 [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?style=flat-square)](https://github.com/Xnor-bear/hexo-theme-sagiri-x#donate)
 
 ## Introduction
