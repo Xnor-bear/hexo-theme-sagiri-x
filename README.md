@@ -12,7 +12,7 @@ As lovely as sagiri, based on [hexo-theme-sagiri](https://github.com/DIYgod/hexo
 
 ## Who use hexo-theme-sagiri-x?
 
-[Xnor](https:xnor.online)
+[Xnor](https//:xnor.online)
 
 ## Donate
 
