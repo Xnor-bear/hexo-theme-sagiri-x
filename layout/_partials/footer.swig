@@ -6,5 +6,5 @@
     {{ theme.footer.beian }}.
 </p>
 <p>由<a href="https://hexo.io/" target="_blank" class="external" rel="nofollow"> Hexo </a>强力驱动.
-    Theme By <a href="https://github.com/DIYgod/hexo-theme-sagiri" target="_blank" class="external" rel="nofollow">Sagiri</a> v{{ theme.version }}.</p>
+    Theme By <a href="https://github.com/Xnor-bear/hexo-theme-sagiri-x" target="_blank" class="external" rel="nofollow">Sagiri</a> v{{ theme.version }}.</p>
 <p>Made with <i class="fas fa-heart throb" style="color: #d43f57;"></i> by <span class="author" itemprop="copyrightHolder">{{ theme.footer.copyright || config.author }}</span>. </p>
