@@ -54,7 +54,7 @@ footer:
   # 如果未定义，将使用当前年份
   since: 8/15/2019 11:30:00
 
-  # 如果未定义，将在 Hexo 主配置中使用 'Author'
+  # 如果未定义，将使用 Hexo 主配置中的 'Author'
   copyright:
 
   # 可以在此处定义任何自定义文本
@@ -107,17 +107,18 @@ menu:
 # 副菜单
 submenu:
   捕捉:
-     GitHub: https://github.com/Xnor-bear
-     Twitter: https://twitter.com/XiangNor
-     Weibo: https://weibo.com/whysohandsome
-     Zhihu: https://www.zhihu.com/people/nextworld
-     Bilibili: https://space.bilibili.com/12080275
-     Netease Music: https://music.163.com/#/user/home?id=36888137
-     Steam: https://steamcommunity.com/id/xiangnor
-     Coolapk: https://www.coolapk.com/u/1008025
+     GitHub: https://github.com/
+     Twitter: https://twitter.com/
+     Weibo: https://weibo.com/
+     Zhihu: https://www.zhihu.com/people/
+     Bilibili: https://space.bilibili.com/
+     Netease Music: https://music.163.com/#/user/home?id=
+     Steam: https://steamcommunity.com/id/
+     Coolapk: https://www.coolapk.com/u/
   实验:
-     APlayer: https://aplayer.js.org/
-     Oneindex: https://pan.prprpr.me/
+    Sagiri: https://github.com/DIYgod/hexo-theme-sagiri
+    Sagiri-X: https://github.com/Xnor-bear/hexo-theme-sagiri-x
+     
 
 # 启用/停用菜单图标
 menu_icons:
@@ -174,10 +175,10 @@ card:
   name: <span style="opacity:.2;">网红</span>Xnor
   description: 捕捉 Xnor Project~
   items:
-    最喜欢的作品: 四月是你的谎言<br>DARLING in the FRANXX<br>Re：从零开始的异世界生活
-    最喜欢的女孩子: 宫园薰、和泉纱雾、灶门祢豆子、土间埋
-    最喜欢的游戏: 守望先锋、人类一败涂地、弹丸论破、逆转裁判
-    装备: 魅族 16S、iPhone 8、Kindle paperwhite 4、Matebook 14(2019 Windows 10 Edition)、Beats Solo 3(Satin Gold)
+    最喜欢的作品: 正确的开多
+    最喜欢的女孩子: 蔡徐坤
+    最喜欢的游戏: E.T. the Extra-Terrestrial-『E.T.外星人』
+    装备: VIVI-『爱爱手机』
 
 # 侧边栏显示目录
 toc:
@@ -336,7 +337,7 @@ font:
     family: Fira Code
     size:
 
-  # 主页大标题字体
+  # 主页顶部标题字体
   title:
     external: true
     family: Luckiest Guy
@@ -362,13 +363,13 @@ baidu_analytics:
 
 # Disqus
 disqus:
-  enable: true
-  shortname:
+  enable: false
+  shortname: # yours
   count: false
-  api:
-  apikey:
-  admin: xiangnorth
-  adminLabel: 带帅比
+  api: # yours
+  apikey: # yours
+  admin: # yours
+  adminLabel: # yours
 
 # Gitment
 # 介绍: https://imsun.net/posts/gitment-introduction/
@@ -681,4 +682,4 @@ js: js
 images: images
 
 # theme version
-version: 0.0.59
+version: 1.0.4

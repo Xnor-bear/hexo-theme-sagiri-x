@@ -14,8 +14,8 @@ Another lovely theme for Hexo.
 As lovely as sagiri, based on [hexo-theme-sagiri](https://github.com/DIYgod/hexo-theme-sagiri) and [hexo-theme-next](https://github.com/iissnan/hexo-theme-next)
 
 ## Who use hexo-theme-sagiri-x?
-
-[Xnor](https://xnor.online)
+### [Xnor](https://xnor.online)
+![Xnor](https://pic.xnor.online/itis.png)
 
 ## Donate
 

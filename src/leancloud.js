@@ -4,7 +4,7 @@ if (window.CONFIG.leancloud.enable) {
   AV.init({
     appId: window.CONFIG.leancloud.appID,
     appKey: window.CONFIG.leancloud.appKey,
-    serverURLs: window.CONFIG.leancloud.serverURLs,
+    serverURLs: 'https://visitors.xnor.online',
   });
   window.AV = AV;
 }
