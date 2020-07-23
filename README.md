@@ -15,7 +15,7 @@ As lovely as sagiri, based on [hexo-theme-sagiri](https://github.com/DIYgod/hexo
 
 ## Who use hexo-theme-sagiri-x?
 ### [Xnor](https://xnor.online)
-![Xnor](https://pic.xnor.online/itis.png)
+![Sagiri-X-Demo](https://raw.githubusercontent.com/Xnor-bear/Living-room-for-Pic/master/itis.png)
 
 ## Donate
 
